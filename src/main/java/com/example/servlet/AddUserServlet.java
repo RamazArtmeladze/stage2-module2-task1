@@ -30,4 +30,9 @@ public class AddUserServlet extends HttpServlet {
         // Forward to the /add page
         request.getRequestDispatcher("/add.jsp").forward(request, response);
     }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Handle GET requests, e.g., forward to the /add.jsp page
+        request.getRequestDispatcher("/add.jsp").forward(request, response);
+    }
 }
